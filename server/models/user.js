@@ -1,23 +1,25 @@
-'use strict'
-
+'use strict';
 module.exports = (sequelize, DataTypes) => {
-
-  const User = sequelize.define('User', {
+  var user = sequelize.define('user', {
     first_name: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type:DataTypes.STRING,
+      allowNull:false
     },
     last_name: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type:DataTypes.STRING,
+      allowNull:false
     },
     city: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type:DataTypes.STRING,
+      allowNull:false
     },
     state: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type:DataTypes.STRING,
+      allowNull:false
     }
-  })
-}
+  }, {});
+  user.associate = function(models) {
+    
+  };
+  return user;
+};
