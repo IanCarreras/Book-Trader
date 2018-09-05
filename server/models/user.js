@@ -17,9 +17,9 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.STRING,
       allowNull:false
     }
-  }, {});
-  user.associate = function(models) {
-    
-  };
-  return user;
-};
+  }, {})
+  user.associate = (models) => {
+
+  }
+  return user
+}
