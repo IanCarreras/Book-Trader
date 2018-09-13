@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 module.exports = (sequelize, DataTypes) => {
   const user_book = sequelize.define('user_book', {
     user_id: {
