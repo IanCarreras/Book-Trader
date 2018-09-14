@@ -1,6 +1,7 @@
 const { book: bookController } = require('../controllers')
 const { request: requestController } = require('../controllers')
 const { user: userController } = require('../controllers')
+const { user_book: userBookController} = require('../controllers')
 
 module.exports = (app) => {
   app.get('/api', (req, res) => res.status(200).send({
@@ -24,4 +25,10 @@ module.exports = (app) => {
   app.get('/api/users/:userId', userController.retrieve)
   app.put('/api/users/:userId', userController.update)
   app.delete('/api/users/:userId', userController.destroy)
+
+  app.post('/api/user_book', userBookController.add)
+  app.get('/api/user_book', userBookController.list)
+  app.get('/api/user_book/:user_bookId', userBookController.retrieve)
+  app.put('/api/user_book/:user_bookId', userBookController.update)
+  app.delete('/api/user_book/:user_bookId', userBookController.destroy)
 }
