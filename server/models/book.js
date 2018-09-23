@@ -2,11 +2,11 @@
 module.exports = (sequelize, DataTypes) => {
   const book = sequelize.define('book', {
     title: {
-      type:DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull:false
     },
     author: {
-      type:DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull:false
     },
     pages: {
@@ -17,9 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.NUMBER,
       allowNull:false
     }
-  }, {})
-  book.associate = (models) => {
+  }, {});
 
-  }
   return book
 }

@@ -10,14 +10,14 @@ module.exports = {
       },
       user_request_id: {
         allowNull: false,
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       user_book_id: {
         allowNull: false,
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       accepted: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.BOOLEAN
       },
       createdAt: {

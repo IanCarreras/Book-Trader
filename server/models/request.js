@@ -13,9 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.BOOLEAN,
       allowNull:false
     }
-  }, {})
-  request.associate = (models) => {
-
-  }
+  }, {});
+  
   return request
 }

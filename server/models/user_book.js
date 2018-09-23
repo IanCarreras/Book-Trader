@@ -1,6 +1,9 @@
 'use strict'
+const User = require('./user');
+const Book = require('./book');
+
 module.exports = (sequelize, DataTypes) => {
-  const user_book = sequelize.define('user_book', {
+  const UserBook = sequelize.define('user_book', {
     user_id: {
       type:DataTypes.NUMBER,
       allowNull:false
@@ -12,9 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     parent_user_book_id: {
       type:DataTypes.NUMBER,
       allowNull:false
-  }, {})
-  user_book.associate = (models) => {
+  }, {});
 
-  }
   return user_book
 }

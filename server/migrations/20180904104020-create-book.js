@@ -17,10 +17,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       pages: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       publication_date: {
-        type: Sequelize.NUMBER
+        type: Sequelize.DATE
       },
       createdAt: {
         allowNull: false,

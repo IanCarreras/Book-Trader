@@ -11,15 +11,13 @@ module.exports = (sequelize, DataTypes) => {
     },
     city: {
       type:DataTypes.STRING,
-      allowNull:false
+      allowNull:true
     },
     state: {
       type:DataTypes.STRING,
-      allowNull:false
+      allowNull:true
     }
-  }, {})
-  user.associate = (models) => {
+  }, {});
 
-  }
   return user
 }

@@ -10,15 +10,11 @@ module.exports = {
       },
       user_id: {
         allowNull: false,
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       book_id: {
         allowNull: false,
-        type: Sequelize.NUMBER
-      },
-      parent_user_book_id: {
-        allowNull: false,
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
