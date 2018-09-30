@@ -1,8 +1,8 @@
-const { Book } = require('../models')
+const { books } = require('../models')
 
 module.exports = {
   add(req, res) {
-    return Book
+    return books
       .create({
         title: req.body.title,
         author: req.body.author,

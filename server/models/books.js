@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const Book = sequelize.define('Book', {
+  const Book = sequelize.define('books', {
     title: {
       type: DataTypes.STRING,
       allowNull:false
@@ -10,11 +10,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull:false
     },
     pages: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull:false
     },
     publication_date: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DATE,
       allowNull:false
     }
   }, {});

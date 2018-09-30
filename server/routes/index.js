@@ -20,7 +20,7 @@ module.exports = (app) => {
   app.put('/api/request/:requestId', requestController.update)
   app.delete('/api/request/:requestId', requestController.destroy)
 
-  app.post('/api/users', userController.add)
+  app.post('/api/users', userController.create)
   app.get('/api/users', userController.list)
   app.get('/api/users/:userId', userController.retrieve)
   app.put('/api/users/:userId', userController.update)

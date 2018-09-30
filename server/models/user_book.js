@@ -1,6 +1,6 @@
 'use strict'
 const User = require('./user');
-const Book = require('./book');
+const Book = require('./books');
 
 module.exports = (sequelize, DataTypes) => {
   const UserBook = sequelize.define('UserBook', {
