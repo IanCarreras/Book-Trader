@@ -1,6 +1,6 @@
-const { book: bookController } = require('../controllers')
-const { request: requestController } = require('../controllers')
-const { user: userController } = require('../controllers')
+const { books: bookController } = require('../controllers')
+const { requests: requestController } = require('../controllers')
+const { users: userController } = require('../controllers')
 const { user_book: userBookController} = require('../controllers')
 
 module.exports = (app) => {

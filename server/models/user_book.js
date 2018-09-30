@@ -3,19 +3,20 @@ const User = require('./user');
 const Book = require('./book');
 
 module.exports = (sequelize, DataTypes) => {
-  const UserBook = sequelize.define('user_book', {
+  const UserBook = sequelize.define('UserBook', {
     user_id: {
-      type:DataTypes.NUMBER,
+      type:DataTypes.INTEGER,
       allowNull:false
     },
     book_id: {
-      type:DataTypes.NUMBER,
+      type:DataTypes.INTEGER,
+      allowNull:false
+    },
+    parent_user_book_id: {
+      type:DataTypes.INTEGER,
       allowNull:false
     }
-    parent_user_book_id: {
-      type:DataTypes.NUMBER,
-      allowNull:false
   }, {});
 
-  return user_book
+  return UserBook
 }
